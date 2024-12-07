@@ -5,6 +5,8 @@ import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Series from "../Series/Series";
 import WhyBlock from "../WhyBlock/WhyBlock";
+import Libery from "../Libery/Libery";
+import Adventures from "../Adventures/Adventures";
 
 export default function MainPage() {
   return (
@@ -13,6 +15,8 @@ export default function MainPage() {
       <Main />
       <Series />
       <WhyBlock />
+      <Libery />
+      <Adventures />
     </Container>
   );
 }

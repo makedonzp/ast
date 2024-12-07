@@ -1,0 +1,51 @@
+.ShineEffect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Чтобы не мешать кликам */
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.Star {
+  position: absolute;
+  background: transparent;
+  clip-path: polygon(
+    50% 0%,
+    /* Верхний центральный луч */ 60% 35%,
+    /* Между верхним и правым лучом */ 98% 35%,
+    /* Правый луч */ 68% 57%,
+    /* Между правым и нижним лучом */ 79% 91%,
+    /* Нижний правый луч */ 50% 70%,
+    /* Нижний центральный луч */ 21% 91%,
+    /* Нижний левый луч */ 32% 57%,
+    /* Между левым и нижним лучом */ 2% 35%,
+    /* Левый луч */ 40% 35% /* Между левым и верхним лучом */
+  );
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: rotate(45deg);
+  opacity: 0;
+  animation: sparkle 3s ease-out forwards;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 0;
+  }
+}

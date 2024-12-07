@@ -1,0 +1,7 @@
+.Libery {
+  padding-block: 120px;
+}
+.LiberyColStroke {
+  min-height: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+  background: var(--gradient-stroke-color);
+}

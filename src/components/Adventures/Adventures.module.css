@@ -1,0 +1,67 @@
+.AdventuresColPlayer {
+  background-image: url("../../assets/player__place.png");
+  height: clamp(18.75rem, 16.893rem + 9.29vw, 25.25rem);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.AdventuresColTextWratter {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+}
+.AdventureText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+.AdventureTitle {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
+}
+.AdventureSocialWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.938rem, 0.741rem + 0.98vw, 1.625rem);
+}
+.AdventureMarketPlaces {
+  display: flex;
+  gap: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
+  align-items: center;
+}
+.AdventureSocialWrapper {
+  display: flex;
+}
+.OzoneMarket {
+  background-image: url("../../assets/ozone.png");
+}
+.WBeMarket {
+  background-image: url("../../assets/wb.png");
+}
+.ReedCityMarket {
+  background-image: url("../../assets/reed_city.png");
+}
+.LetterEaterMarket {
+  background-image: url("../../assets/letter_eater.png");
+}
+.OzoneMarket,
+.WBeMarket,
+.ReedCityMarket,
+.LetterEaterMarket {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: clamp(1.938rem, 1.58rem + 1.79vw, 3.188rem);
+  min-width: clamp(1.875rem, 1.518rem + 1.79vw, 3.125rem);
+}
+.AdventuresRowFilter {
+  padding-top: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
+}
+.AdventuresRowCards {
+  padding-bottom: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+}
