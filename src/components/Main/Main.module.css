@@ -1,12 +1,13 @@
 .Main {
-  background-image: url("../../assets/main__bgr_img.png");
-  min-height: clamp(31.25rem, 27.5rem + 25.75vw, 55.775rem);
+  background-image: url("../../assets/main__bg_v2.png");
+  /* min-height: clamp(31.25rem, 27.5rem + 25.75vw, 55.775rem); */
   flex-grow: 1;
   display: flex;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
+  background-size: contain;
+  background-position: center;
   padding: 0 !important;
+  height: 100vh;
 }
 .MainContainer {
   flex-grow: 1;
@@ -62,4 +63,10 @@
 .MainTextBottom {
   font-family: "Montserrat-Medium", serif;
   font-size: clamp(1.125rem, 0.982rem + 0.71vw, 1.625rem);
+}
+@media screen and (max-width: 1350px) {
+  .Main {
+    background-size: cover;
+    background-position: left bottom;
+  }
 }
