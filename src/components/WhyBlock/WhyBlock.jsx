@@ -23,18 +23,44 @@ export default function WhyBlock() {
         <Row>
           <Col>
             <div className={styles.Advantages}>
-              <div
-                className={styles.AdvantagesItem + " " + styles.BookItem}
-              ></div>
-              <div
-                className={styles.AdvantagesItem + " " + styles.StarsItem}
-              ></div>
-              <div
-                className={styles.AdvantagesItem + " " + styles.StrokeItem}
-              ></div>
-              <div
-                className={styles.AdvantagesItem + " " + styles.ThingsItem}
-              ></div>
+              <div className={styles.AdvantagesItem + " " + styles.BookItem}>
+                <div
+                  className={styles.AdvantagesItem + " " + styles.BookItemImage}
+                ></div>
+                <p className={styles.AdvantagesItemText}>
+                  Улучшение <br /> понимания текста
+                </p>
+              </div>
+              <div className={styles.AdvantagesItem + " " + styles.StarsItem}>
+                <div
+                  className={
+                    styles.AdvantagesItem + " " + styles.StarsItemImage
+                  }
+                ></div>
+                <p className={styles.AdvantagesItemText}>
+                  Стимуляция <br /> воображения
+                </p>
+              </div>
+              <div className={styles.AdvantagesItem + " " + styles.StrokeItem}>
+                <div
+                  className={
+                    styles.AdvantagesItem + " " + styles.StrokeItemImage
+                  }
+                ></div>
+                <p className={styles.AdvantagesItemText}>
+                  Развитие <br /> восприятия
+                </p>
+              </div>
+              <div className={styles.AdvantagesItem + " " + styles.ThingsItem}>
+                <div
+                  className={
+                    styles.AdvantagesItem + " " + styles.ThingsItemImage
+                  }
+                ></div>
+                <p className={styles.AdvantagesItemText}>
+                  Развитие мелкой <br /> моторики рук
+                </p>
+              </div>
             </div>
           </Col>
         </Row>

@@ -42,6 +42,9 @@
   border-radius: 13px;
   font-family: "Montserrat-Regular", serif;
 }
+.MainButton:hover {
+  background-color: var(--hover-btn-color);
+}
 .MainRowBottom {
   display: flex;
   justify-content: flex-end;
