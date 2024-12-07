@@ -1,0 +1,81 @@
+.WhyBlock {
+  padding: 0 !important;
+  padding-top: clamp(2.5rem, 1.071rem + 7.14vw, 7.5rem) !important;
+}
+.WhyBlockRowImages {
+  padding-top: clamp(1.25rem, 0.839rem + 2.05vw, 2.688rem);
+  gap: 20px;
+}
+.WhyBlockColBoy {
+  background-image: url("../../assets/boy_img.png");
+  min-height: clamp(18.75rem, 15.804rem + 14.73vw, 29.063rem);
+}
+.WhyBlockColGirl {
+  background-image: url("../../assets/girl_img.png");
+  min-height: clamp(18.75rem, 15.804rem + 14.73vw, 29.063rem);
+}
+.WhyBlockColBoy,
+.WhyBlockColGirl {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.WhyBlockTitle {
+  font-size: clamp(2rem, 1.714rem + 1.43vw, 3rem);
+}
+.WhyBlockText {
+  font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
+  padding-top: clamp(1.563rem, 0.938rem + 3.13vw, 3.75rem);
+}
+.Advantages {
+  display: grid;
+  grid-template-areas: "BookItem StarsItem StrokeItem ThingsItem";
+  gap: 16px;
+  max-width: 994px;
+  margin: 0 auto;
+  padding-top: clamp(1.563rem, 0.938rem + 3.13vw, 3.75rem);
+}
+.BookItem {
+  grid-area: BookItem;
+  background-image: url("../../assets/book__card-img.png");
+}
+.StarsItem {
+  grid-area: StarsItem;
+  background-image: url("../../assets/stars_card_img.png");
+}
+.StrokeItem {
+  grid-area: StrokeItem;
+  background-image: url("../../assets/medal_card_img.png");
+}
+.ThingsItem {
+  grid-area: ThingsItem;
+  background-image: url("../../assets/figures_card_img.png");
+}
+.BookItem,
+.StarsItem,
+.StrokeItem,
+.ThingsItem {
+  min-height: 207px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (max-width: 1000px) {
+  .Advantages {
+    grid-template-areas:
+      "BookItem StarsItem"
+      "StrokeItem ThingsItem";
+  }
+}
+@media screen and (max-width: 768px) {
+  .WhyBlockRowImages {
+    flex-direction: column !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Advantages {
+    grid-template-areas:
+      "BookItem" "StarsItem"
+      "StrokeItem" "ThingsItem";
+  }
+}

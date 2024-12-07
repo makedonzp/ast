@@ -1,0 +1,68 @@
+.Header {
+  background-color: var(--header-bgr-color);
+  height: clamp(3.125rem, 2.946rem + 0.89vw, 3.75rem);
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+.HeaderLogoImage {
+  background-image: url("../../assets/logo.svg");
+  height: 43px;
+  width: 47px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.HeaderLogo_and_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.HeaderNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.HeaderLinksWrapper {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+}
+.HeaderLink {
+  text-decoration: none;
+}
+.HeaderSocialsImageWhatsapp {
+  background-image: url("../../assets/WhatsApp.svg");
+}
+.HeaderSocialsImageTelegram {
+  background-image: url("../../assets/Telegram.svg");
+}
+.HeaderSocialsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10.14px;
+}
+.HeaderSocialsLink {
+  height: 36.5px;
+  width: 36.5px;
+  border: solid 1px var(--black-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HeaderSocialsImageWhatsapp,
+.HeaderSocialsImageTelegram {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18.25px;
+  height: 18.39px;
+}
+@media (max-width: 1000px) {
+  .HeaderNav {
+    display: none;
+  }
+}

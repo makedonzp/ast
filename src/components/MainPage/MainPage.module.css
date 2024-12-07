@@ -1,0 +1,7 @@
+.MainPage {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  background-color: var(--page-bgr-color);
+}

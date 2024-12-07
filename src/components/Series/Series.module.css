@@ -1,0 +1,63 @@
+.Series {
+  padding: 0 !important;
+  min-height: clamp(25rem, 20.482rem + 22.59vw, 40.813rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: clamp(2.5rem, 1.536rem + 4.82vw, 5.875rem) !important;
+}
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-card-bg-color);
+  padding-block: clamp(1.75rem, 1.268rem + 2.41vw, 3.438rem);
+  padding-inline: clamp(3.438rem, 2.098rem + 6.7vw, 8.125rem);
+  min-height: clamp(18.75rem, 16.268rem + 12.41vw, 27.438rem);
+  text-align: center;
+  gap: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+  border-radius: 50px;
+}
+.SeriesInformationWrapper {
+  display: grid;
+  grid-template-areas: "first second third fourth";
+  gap: clamp(2.5rem, 1.071rem + 7.14vw, 7.5rem);
+}
+.SeriesInformationNumber {
+  color: var(--main-question-text-color) !important;
+  font-family: "Montserrat-Bold", serif;
+  text-wrap: nowrap;
+}
+.SeriesInformationText {
+  text-wrap: nowrap;
+  font-family: "Exo-Regular", serif;
+  margin-bottom: 0;
+  font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+}
+
+.First {
+  grid-area: first;
+}
+.Second {
+  grid-area: second;
+}
+.Third {
+  grid-area: third;
+}
+.Fourth {
+  grid-area: fourth;
+}
+.SeriesCardText {
+  font-family: "Montserrat-Regular", serif;
+  font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
+}
+@media screen and (max-width: 1000px) {
+  .SeriesInformationWrapper {
+    grid-template-areas: "first second" "third fourth";
+  }
+}
+@media screen and (max-width: 768px) {
+  .SeriesInformationWrapper {
+    grid-template-areas: "first" "second" "third" "fourth";
+  }
+}
