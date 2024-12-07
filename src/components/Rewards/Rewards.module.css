@@ -1,0 +1,56 @@
+.RewardsRowBook {
+  display: flex;
+  justify-content: center;
+  max-width: 934px;
+  margin: 0 auto;
+}
+.RewardsBookWrapper {
+  display: flex;
+  gap: 24px;
+}
+.RewardsBookImage {
+  min-height: 268px;
+  min-width: 273px;
+  background-image: url("../../assets/book.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.RewardsBookText {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.RewardsBookSteps {
+  background-image: url("../../assets/foots_1.png");
+  width: 398px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.RewardsRowHands {
+  display: flex;
+  justify-content: center;
+  max-width: 934px;
+  margin: 0 auto;
+}
+.RewardsHandsWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.RewardsHandsImage {
+  min-height: 268px;
+  min-width: 273px;
+  background-image: url("../../assets/hands.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.RewardsHandsText {
+  position: absolute;
+  z-index: 3;
+  bottom: 8%;
+  text-align: center;
+  width: 100%;
+}

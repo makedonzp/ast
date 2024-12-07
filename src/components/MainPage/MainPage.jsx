@@ -7,6 +7,7 @@ import Series from "../Series/Series";
 import WhyBlock from "../WhyBlock/WhyBlock";
 import Libery from "../Libery/Libery";
 import Adventures from "../Adventures/Adventures";
+import Rewards from "../Rewards/Rewards";
 
 export default function MainPage() {
   return (
@@ -17,6 +18,7 @@ export default function MainPage() {
       <WhyBlock />
       <Libery />
       <Adventures />
+      <Rewards />
     </Container>
   );
 }
