@@ -8,6 +8,9 @@ import WhyBlock from "../WhyBlock/WhyBlock";
 import Libery from "../Libery/Libery";
 import Adventures from "../Adventures/Adventures";
 import Rewards from "../Rewards/Rewards";
+import MoreInfo from "../MoreInfo/MoreInfo";
+import Reviews from "../Reviews/Reviews";
+import Active from "../Active/Active";
 
 export default function MainPage() {
   return (
@@ -19,6 +22,9 @@ export default function MainPage() {
       <Libery />
       <Adventures />
       <Rewards />
+      <MoreInfo />
+      <Reviews />
+      <Active />
     </Container>
   );
 }

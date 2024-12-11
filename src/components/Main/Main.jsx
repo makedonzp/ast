@@ -13,7 +13,7 @@ export default function Main() {
               Ребёнок «залипает» в гаджетах?{" "}
             </h5>
             <p className={styles.MainText}>
-              Откроем маленькое путешествие в страну чудес <br /> с помощью
+              Откроем маленькое путешествие в страну чудес с помощью
               удивительных 3D-книг!
             </p>
             <div className={styles.BtnWrapper}>

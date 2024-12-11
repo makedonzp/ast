@@ -33,6 +33,7 @@
 .HeaderLink {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
+  color: var(--black-color);
 }
 .HeaderLink:hover {
   color: var(--yellow-btn-color) !important;

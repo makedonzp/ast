@@ -1,0 +1,167 @@
+.Active {
+  padding: 0 !important;
+  background-image: url("../../assets/map__image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding-top: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem) !important;
+  padding-inline: clamp(0rem, -1.071rem + 5.36vw, 3.75rem) !important;
+  min-height: clamp(50rem, 48.75rem + 6.25vw, 54.375rem);
+  display: flex;
+}
+.ActiveContainer {
+  flex-grow: 1;
+}
+.ActiveColTop {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.TitleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Title {
+  font-size: clamp(2rem, 1.714rem + 1.43vw, 3rem);
+  margin-bottom: 0;
+}
+.Subtitle {
+  font-size: clamp(1.75rem, 1.536rem + 1.07vw, 2.5rem);
+  font-family: "Montserrat-Regular", serif;
+  margin-bottom: 0;
+}
+
+.ActiveColBottomInfoCompanyName {
+  margin-bottom: 0;
+  text-wrap: nowrap;
+}
+
+.ActiveSocialWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.ActiveSocialImage {
+  background-image: url("../../assets/map__vk_icon.svg");
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.ActiveSocialText {
+  margin-bottom: 0;
+  font-family: "Montserrat-Regular", serif;
+}
+.ActiveButton {
+  background-color: var(--yellow-btn-color);
+  color: var(--main-title-color);
+  padding: 16px 26px;
+  border-radius: 13px;
+}
+.ActiveRowBottom {
+  padding-top: clamp(1.875rem, 2.268rem + 8.04vw, 7.5rem);
+}
+.ActiveContactsPhoneName,
+.ActiveContactsPhone,
+.ActiveEmailName,
+.ActiveEmail {
+  font-size: clamp(1.5rem, 1.357rem + 0.71vw, 2rem);
+  font-family: "Montserrat-Regular", serif;
+  margin-bottom: 0;
+}
+.ActiveColBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.ActiveColBottomInfoList {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.ActiveColBottomInfoLink {
+  color: var(--main-title-color);
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+.ActiveBottomInfoSocialWrapper {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+}
+.ActiveLink {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  color: var(--black-color);
+}
+.ActiveLink:hover {
+  color: var(--yellow-btn-color) !important;
+  transition: all 0.5s ease-in-out;
+}
+.ActiveSocialsImageWhatsapp {
+  background-image: url("../../assets/WhatsApp.svg");
+}
+.ActiveSocialsImageTelegram {
+  background-image: url("../../assets/Telegram.svg");
+}
+.ActiveSocialsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10.14px;
+}
+.ActiveSocialsLink {
+  height: 36.5px;
+  width: 36.5px;
+  border: solid 1px var(--black-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+.ActiveSocialsLink:hover {
+  border: solid 1px var(--yellow-btn-color);
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+.ActiveSocialsImageWhatsapp,
+.ActiveSocialsImageTelegram {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18.25px;
+  height: 18.39px;
+}
+.ActiveColBottomInfoCompany,
+.ActiveColBottomInfoListWrapper,
+.ActiveColBottomInfoSocialWrapper {
+  align-items: center;
+  min-height: 37px;
+  display: flex;
+}
+.ActiveColBottomInfoListWrapper {
+  justify-content: center;
+}
+.ActiveColBottomInfoSocialWrapper {
+  justify-content: flex-end;
+}
+.ActiveRowBottomInfoCompany {
+  padding-top: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+  padding-bottom: clamp(3.125rem, 2.696rem + 2.14vw, 4.625rem);
+}
+@media screen and (max-width: 770px) {
+  .ActiveColBottomInfoCompany,
+  .ActiveColBottomInfoListWrapper,
+  .ActiveColBottomInfoSocialWrapper {
+    min-width: 100% !important;
+    justify-content: flex-start !important;
+    padding-top: 12px;
+  }
+}
