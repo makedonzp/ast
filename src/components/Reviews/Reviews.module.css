@@ -164,6 +164,7 @@
   justify-content: space-between;
   align-items: center;
   padding-inline: 2%;
+  padding-top: 30px;
 }
 @media screen and (max-width: 1000px) {
   .ReviewsButtons {
