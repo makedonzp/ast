@@ -121,12 +121,13 @@ export default function Reviews() {
                   <div className={styles.ReviewsCards} key={review.id}>
                     <div className={styles.ReviewsCardsRaiting}>
                       <RatingStars rating={review.rating} />
-                    </div>
-                    <div className={styles.ReviewsCardsText}>
-                      <h2>{review.title}</h2>
-                      <p>{review.text}</p>
+                      <div className={styles.ReviewsCardsText}>
+                        <h2>{review.title}</h2>
+                        <p>{review.text}</p>
+                      </div>
                     </div>
                     <div className={styles.ReviewsCardsAuthor}>
+                      <div className={styles.ReviewsCardsAuthorImage}></div>
                       <h3>{review.name}</h3>
                       <p>{review.city}</p>
                     </div>
