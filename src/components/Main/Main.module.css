@@ -118,15 +118,27 @@
     background-position: left bottom;
   }
 }
-@media (max-width: 1000px) {
-  .Main {
-    background-image: url("../../assets/main__bg_mobile.png");
-    background-size: contain;
+@media (max-width: 1200px) {
+  .CardOne,
+  .CardTwo,
+  .CardThree {
+    display: none;
   }
+}
+@media (max-width: 1000px) {
   .MainText {
     padding-top: 0;
   }
   .BtnWrapper {
     padding-top: 10px;
+  }
+  .Cat {
+    display: none;
+  }
+}
+@media (max-width: 568px) {
+  .Main {
+    background-image: url("../../assets/main__bg_mobile.png");
+    background-size: contain;
   }
 }
