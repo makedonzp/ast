@@ -26,7 +26,7 @@ export default function Rewards() {
             <div className={styles.RewardsHandsSteps}></div>
             <div className={styles.RewardsPazzleImage}>
               <p className={styles.RewardsPazzleText}>
-                4. Выиграть <br />в мини-игру
+                2. Выиграть <br />в мини-игру
               </p>
             </div>
           </Col>
@@ -35,7 +35,7 @@ export default function Rewards() {
           <Col className={styles.RewardsPaperNoteWrapper}>
             <div className={styles.RewardsHandsImage}>
               <p className={styles.RewardsHandsText}>
-                2. Поделиться <br /> сайтом с другом
+                3. Поделиться <br /> сайтом с другом
               </p>
             </div>
           </Col>
@@ -45,7 +45,7 @@ export default function Rewards() {
             <div className={styles.RewardsPaperNoteSteps}></div>
             <div className={styles.RewardsPrizeImage}>
               <p className={styles.RewardsPrizeText}>
-                5. Получить <br /> приз
+                4. Получить <br /> приз
               </p>
             </div>
           </Col>
