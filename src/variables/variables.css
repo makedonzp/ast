@@ -1,0 +1,18 @@
+:root {
+  --page-bgr-color: #f0f0f0;
+  --yellow-btn-color: #ffdd12;
+  --main-title-color: #333333;
+  --main-question-text-color: #595880;
+  --black-color: #000000;
+  --main-card-desc-color: #151515;
+  --main-card-bg-color: #faddff;
+  --pink-btn-color: #fecaec;
+  --fiolet-btn-color: #898eff;
+  --light-blue-card-bg: #c8e8f9;
+  --stars-bg-color: #f3e634;
+  --gradient-stroke-color: linear-gradient(to right, #e2b187, #fbd476, #e1b186);
+  --hover-btn-color: #b4b4b4;
+  --header-bgr-color: #ffdc61;
+  --white-color: #ffffff;
+  --title-text-color: #b939d1;
+}

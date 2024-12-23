@@ -1,0 +1,158 @@
+.Footer {
+  padding: 0 !important;
+  background-image: url("../../assets/map__image.png");
+  min-height: 550px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.ActiveRowBottom {
+  padding-top: clamp(1.875rem, 2.268rem + 8.04vw, 7.5rem);
+}
+.HeaderLogoImage {
+  background-image: url("../../assets/logo.svg");
+  height: 43px;
+  width: 47px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.HeaderSocialsImageVk {
+  background-image: url("../../assets/map__vk_icon.svg");
+}
+.HeaderSocialsImageWhatsapp {
+  background-image: url("../../assets/header__watsapp.svg");
+}
+.HeaderSocialsImageTelegram {
+  background-image: url("../../assets/header__tg.svg");
+}
+.HeaderSocialsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10.14px;
+}
+.HeaderSocialsLink {
+  transition: all 0.4s ease-in-out;
+}
+.HeaderSocialsLink:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+.HeaderSocialsImageWhatsapp,
+.HeaderSocialsImageTelegram,
+.HeaderSocialsImageVk {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 36px;
+  height: 36px;
+}
+.ActiveContactsPhoneName,
+.ActiveContactsPhone,
+.ActiveEmailName,
+.ActiveEmail {
+  font-size: clamp(1.5rem, 1.357rem + 0.71vw, 2rem);
+  font-family: "Montserrat-Regular", serif;
+  margin-bottom: 0;
+}
+.ActiveColBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.ActiveColBottomInfoList {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.ActiveColBottomInfoLink {
+  color: var(--main-title-color);
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+.ActiveBottomInfoSocialWrapper {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+}
+.ActiveLink {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  color: var(--black-color);
+}
+.ActiveLink:hover {
+  color: var(--yellow-btn-color) !important;
+  transition: all 0.5s ease-in-out;
+}
+.ActiveSocialsImageWhatsapp {
+  background-image: url("../../assets/WhatsApp.svg");
+}
+.ActiveSocialsImageTelegram {
+  background-image: url("../../assets/Telegram.svg");
+}
+.ActiveSocialsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10.14px;
+}
+.ActiveSocialsLink {
+  height: 36.5px;
+  width: 36.5px;
+  border: solid 1px var(--black-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+.ActiveSocialsLink:hover {
+  border: solid 1px var(--yellow-btn-color);
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+.ActiveSocialsImageWhatsapp,
+.ActiveSocialsImageTelegram {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18.25px;
+  height: 18.39px;
+}
+.ActiveColBottomInfoCompany,
+.ActiveColBottomInfoListWrapper,
+.ActiveColBottomInfoSocialWrapper {
+  align-items: center;
+  min-height: 37px;
+  display: flex;
+  gap: 24px;
+}
+.ActiveColBottomInfoCompanyName {
+  margin-bottom: 0;
+  text-wrap: nowrap;
+}
+.ActiveColBottomInfoListWrapper {
+  justify-content: center;
+}
+.ActiveColBottomInfoSocialWrapper {
+  justify-content: flex-end;
+}
+.ActiveRowBottomInfoCompany {
+  padding-top: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+}
+@media screen and (max-width: 770px) {
+  .ActiveColBottomInfoCompany,
+  .ActiveColBottomInfoListWrapper,
+  .ActiveColBottomInfoSocialWrapper {
+    min-width: 100% !important;
+    justify-content: flex-start !important;
+    padding-top: 12px;
+  }
+}

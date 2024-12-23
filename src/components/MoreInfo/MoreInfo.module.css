@@ -1,0 +1,90 @@
+.MoreInfo {
+  padding: 0;
+  padding-bottom: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+}
+.MoreInfoContainer {
+  background-color: var(--light-blue-card-bg);
+  border-radius: 50px;
+  min-height: clamp(21.875rem, 19.196rem + 13.39vw, 32.58rem);
+  display: flex;
+  justify-content: center;
+}
+.MoreInfoCol {
+  margin: 0 auto;
+}
+.MoreInfoTitle,
+.MoreInfoText {
+  margin-bottom: 0;
+}
+.PinkBgrCard {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: clamp(2.5rem, 0.536rem + 8.82vw, 7.2rem);
+  padding-left: clamp(2.5rem, 0.536rem + 8.82vw, 7.2rem);
+  padding-right: clamp(2.5rem, 0.536rem + 8.82vw, 7.2rem);
+  gap: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
+}
+.MoreInfoCol {
+  background-color: var(--pink-btn-color);
+  flex-grow: 1;
+}
+.MoreInfoTitle {
+  font-family: "Montserrat-SemiBold", serif;
+  font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
+}
+.MoreInfoText {
+  font-family: "Montserrat-Regular", serif;
+  font-size: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+}
+
+.FormInputWrapper {
+  min-height: clamp(2.188rem, 1.634rem + 2.77vw, 4.125rem);
+  padding-top: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.MoreInfoInput {
+  height: clamp(3.188rem, 2.634rem + 2.77vw, 4.125rem);
+  width: 100%;
+  border-radius: 15px 0 0 15px;
+  padding: 20px;
+}
+.MoreInfoInput::placeholder {
+  font-family: "Montserrat-Regular", serif;
+}
+.MoreInfoButton {
+  background-color: var(--yellow-btn-color);
+  height: clamp(3.188rem, 2.634rem + 2.77vw, 4.125rem);
+  border-radius: 0 15px 15px 0;
+  width: clamp(9.375rem, 2.054rem + 11.61vw, 12.5rem);
+  font-family: "Montserrat-Regular", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .MoreInfoCol {
+    width: 100% !important;
+    margin: 0;
+    padding-inline: 2%;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .FormInputWrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .MoreInfoButton {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .MoreInfoInput {
+    border-radius: 15px;
+  }
+}

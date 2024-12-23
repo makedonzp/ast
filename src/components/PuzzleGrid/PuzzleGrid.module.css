@@ -1,0 +1,53 @@
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 850px;
+  height: 485px;
+  position: relative;
+  background: #feb6d8; /* Цвет поля сбора */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 141.67px); /* 6 столбцов */
+  grid-template-rows: repeat(5, 97px); /* 5 строк */
+  gap: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gridCell {
+  border: 2px dashed transparent;
+  transition: border-color 0.3s ease;
+  background: transparent; /* Цвет ячейки по умолчанию (прозрачный) */
+}
+
+.gridCell:hover {
+  border-color: #007bff; /* Подсветка ячейки */
+}
+
+.gridCell.empty {
+  background: #feb6d8; /* Цвет ячейки, если она пуста */
+}
+
+.piecesContainer {
+  position: absolute;
+  top: 107%;
+  left: -5%; /* Расположение пазлов слева от поля сбора */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 924px; /* Ширина контейнера для пазлов */
+  border: 2px dashed #ccc; /* Граница контейнера */
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.piece {
+  width: 141.67px; /* Ширина пазла */
+  height: 97px; /* Высота пазла */
+  background-image: url("../../assets/puzzle_complete.png"); /* Изображение пазла */
+  background-size: 850px 485px; /* Размер изображения */
+  cursor: grab;
+}

@@ -1,0 +1,16 @@
+.RatingStars {
+  display: flex;
+  gap: 5px; /* Расстояние между звездами */
+  justify-content: center;
+  align-items: center;
+}
+
+.StarEmpty {
+  font-size: 32px;
+  color: #fbfbfba4; /* Цвет пустой звезды */
+}
+
+.StarFilled {
+  font-size: 32px;
+  color: var(--stars-bg-color); /* Использует глобальную переменную */
+}

@@ -1,0 +1,80 @@
+/* Libery.module.css */
+.Libery {
+  padding-block: 120px;
+}
+
+.LiberyColStroke {
+  min-height: 40px;
+  background: var(--gradient-stroke-color);
+}
+.Title {
+  font-family: "Adigiana-2", serif;
+  color: var(--title-text-color);
+  font-size: clamp(3.25rem, 1.464rem + 3.93vw, 5rem);
+}
+.LiberyBooksRow {
+  padding-top: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  flex-wrap: nowrap !important;
+  gap: 1px;
+}
+.LiberyBooksRow::-webkit-scrollbar {
+  display: none;
+}
+.LiberyColStrokeRow {
+  position: relative;
+}
+.StrokeContainer {
+  padding: 0 !important;
+}
+.LiberyColLights {
+  background-image: url("../../assets/lights.png");
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  height: 85px;
+}
+/* Styles for the outer container */
+.LiberyBooksCol {
+  min-height: 580px;
+  /* max-width: 130px !important; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: relative;
+  display: flex; /* Добавляем flex для правильного отображения */
+  justify-content: center; /* Выравниваем содержимое по центру */
+  align-items: center; /* Выравниваем содержимое по центру */
+  transition: transform 0.5s ease-in-out;
+}
+.LiberyBooksCol:hover {
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.LiberyBooksColLink {
+  position: absolute;
+  height: 100%; /* Занимает всю высоту */
+  width: 100%; /* Занимает всю ширину */
+  left: 0;
+  top: 0;
+  z-index: 10; /* Увеличиваем z-index, чтобы ссылка была поверх фона */
+}
+.bookTextWrapper {
+  transform: rotate(-90deg);
+  text-wrap: nowrap;
+  display: flex;
+  gap: 10px;
+}
+
+.bookTextWrapper p {
+  margin-bottom: 0;
+  font-size: 13px;
+}

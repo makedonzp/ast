@@ -1,0 +1,9 @@
+@import url("./zero_styles.css");
+@import url("./fonts/fonts.css");
+@import url("./variables/variables.css");
+
+* {
+  font-family: "Comfortaa-Regular", serif;
+  font-size: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+  color: var(--black-color);
+}

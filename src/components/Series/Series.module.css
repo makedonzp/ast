@@ -1,0 +1,73 @@
+.Series {
+  padding: 0 !important;
+  min-height: clamp(25rem, 20.482rem + 22.59vw, 40.813rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: clamp(2.5rem, 1.536rem + 4.82vw, 5.875rem) !important;
+  background-color: var(--main-card-bg-color);
+}
+.Card {
+  display: flex;
+  flex-direction: column;
+  min-height: clamp(18.75rem, 16.268rem + 12.41vw, 27.438rem);
+  gap: clamp(1.5rem, 0.857rem + 3.21vw, 3.75rem);
+  border-radius: 50px;
+}
+.SeriesTitle {
+  font-family: "Adigiana-2", "serif";
+  color: var(--title-text-color) !important;
+  margin-bottom: 0;
+  font-size: clamp(3.25rem, 1.464rem + 3.93vw, 5rem);
+}
+.SeriesSubtitle {
+  font-family: "Montserrat-Regular", "serif";
+  padding-top: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
+  font-size: 24px;
+}
+.SeriesInformationWrapper {
+  display: grid;
+  grid-template-areas: "first second third fourth";
+  gap: clamp(2.5rem, 1.071rem + 7.14vw, 7.5rem);
+  width: clamp(18.75rem, 4.464rem + 71.43vw, 68.75rem);
+  margin: 0 auto;
+  text-align: center;
+}
+.SeriesInformationNumber {
+  color: var(--title-text-color) !important;
+  font-family: "Montserrat-ExtraBold", serif;
+  text-wrap: nowrap;
+}
+.SeriesInformationText {
+  text-wrap: nowrap;
+  font-family: "Exo-Regular", serif;
+  margin-bottom: 0;
+  font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+}
+
+.First {
+  grid-area: first;
+}
+.Second {
+  grid-area: second;
+}
+.Third {
+  grid-area: third;
+}
+.Fourth {
+  grid-area: fourth;
+}
+.SeriesCardText {
+  font-family: "Montserrat-Regular", serif;
+  font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
+}
+@media screen and (max-width: 1000px) {
+  .SeriesInformationWrapper {
+    grid-template-areas: "first second" "third fourth";
+  }
+}
+@media screen and (max-width: 768px) {
+  .SeriesInformationWrapper {
+    grid-template-areas: "first second" "third fourth";
+  }
+}

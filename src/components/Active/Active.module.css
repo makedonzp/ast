@@ -1,0 +1,72 @@
+.Active {
+  padding: 0 !important;
+  padding-top: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem) !important;
+  padding-inline: clamp(0rem, -1.071rem + 5.36vw, 3.75rem) !important;
+  min-height: clamp(18.75rem, 14.214rem + 22.68vw, 34.625rem);
+}
+.ActiveContainer {
+  flex-grow: 1;
+}
+.ActiveColTop {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.TitleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Title {
+  font-size: clamp(3.25rem, 1.464rem + 3.93vw, 5rem);
+  margin-bottom: 0;
+  font-family: "Adigiana-2", serif;
+  color: var(--title-text-color);
+}
+.Subtitle {
+  font-size: clamp(1.75rem, 1.536rem + 1.07vw, 2.5rem);
+  font-family: "Montserrat-Regular", serif;
+  margin-bottom: 0;
+}
+
+.ActiveColBottomInfoCompanyName {
+  margin-bottom: 0;
+  text-wrap: nowrap;
+}
+
+.ActiveSocialWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.ActiveSocialImage {
+  background-image: url("../../assets/map__vk_icon.svg");
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.ActiveSocialText {
+  margin-bottom: 0;
+  font-family: "Montserrat-Regular", serif;
+}
+.ActiveButton {
+  background-color: var(--yellow-btn-color);
+  color: var(--main-title-color);
+  padding: 16px 26px;
+  border-radius: 13px;
+}
+.wrapper {
+  padding-top: clamp(1.875rem, 1.696rem + 0.89vw, 2.5rem);
+  display: flex;
+  align-items: center;
+  gap: clamp(1.875rem, 0.982rem + 4.46vw, 5rem);
+}
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

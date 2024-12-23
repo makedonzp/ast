@@ -1,0 +1,63 @@
+.modal {
+  background: rgba(207, 207, 207, 0.047);
+  backdrop-filter: blur(10px);
+  padding: 0 !important;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modalContent {
+  flex-grow: 1;
+  padding: 0 !important;
+  position: relative;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.modalBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.modalButton {
+  width: 436px;
+  height: 106px;
+  background-color: var(--header-bgr-color);
+  color: var(--black-color);
+  border-radius: 50px;
+  font-size: 48px;
+  font-family: "Montserrat-Regular", serif;
+  border-style: none;
+}
+.modalCol {
+  display: flex;
+  justify-content: center;
+}
+.StarsLeft {
+  background-image: url("../../assets/modal_left_pressies.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  width: 177px;
+  height: 339px;
+  bottom: 0;
+  left: 0;
+}
+.StarsRight {
+  background-image: url("../../assets/modal__right_pressies.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  width: 81px;
+  height: 290px;
+  bottom: 30%;
+  right: 0;
+}

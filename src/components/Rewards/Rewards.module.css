@@ -1,0 +1,230 @@
+.Rewards {
+  padding-top: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+}
+.RewardsContainer {
+  padding-bottom: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+}
+.RewardsRowBook {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  max-width: 934px;
+  margin: 0 auto !important;
+}
+.RewardsBookWrapper {
+  display: flex;
+  gap: 24px;
+}
+.RewardsBookImage {
+  min-height: 268px;
+  min-width: 273px;
+  background-image: url("../../assets/book.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+.RewardsBookText {
+  position: absolute;
+  z-index: 3;
+  bottom: 16%;
+  text-align: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+.RewardsBookSteps {
+  background-image: url("../../assets/foots_1.png");
+  min-width: 398px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.RewardsRowHands {
+  display: flex;
+  max-width: 934px;
+  margin: 0 auto !important;
+  margin-top: -4% !important;
+}
+.RewardsHandsWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.RewardsHandsSteps {
+  background-image: url("../../assets/foots_2.png");
+  min-width: 410px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.RewardsHandsImage {
+  min-height: 268px;
+  min-width: 273px;
+  background-image: url("../../assets/hands.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.RewardsHandsText {
+  position: absolute;
+  z-index: 3;
+  bottom: 17%;
+  text-align: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+.RewardsRowPaperNote {
+  display: flex;
+  justify-content: center;
+  max-width: 934px;
+  margin: 0 auto !important;
+  margin-top: -10% !important;
+}
+.RewardsPaperNoteWrapper {
+  margin-bottom: -10% !important;
+  display: flex;
+  gap: 24px;
+}
+.RewardsPaperNoteImage {
+  min-height: 268px;
+  min-width: 273px;
+  background-image: url("../../assets/paper_note.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.RewardsPaperNoteText {
+  position: absolute;
+  z-index: 3;
+  bottom: 8%;
+  text-align: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.RewardsPaperNoteSteps {
+  background-image: url("../../assets/foots_3.png");
+  min-width: 398px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.RewardsRowPazzle {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 934px;
+  margin: 0 auto !important;
+}
+.RewardsPazzleWrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+}
+.RewardsPazzleImage {
+  min-height: 268px;
+  min-width: 273px;
+  background-image: url("../../assets/pazzle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.RewardsPazzleText {
+  position: absolute;
+  z-index: 3;
+  bottom: 8%;
+  text-align: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+.RewardsRowPrize {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto !important;
+  max-width: 934px;
+}
+
+.RewardsPrizeWrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.RewardsPrizeImage {
+  min-height: 268px;
+  min-width: 273px;
+  background-image: url("../../assets/Reward_cup.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.RewardsPrizeText {
+  position: absolute;
+  z-index: 3;
+  bottom: 10%;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.RewardsPrizeSteps {
+  background-image: url("../../assets/foots_4.png");
+  min-width: 600px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+@media (max-width: 1000px) {
+  .RewardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .RewardsRowBook,
+  .RewardsRowHands,
+  .RewardsRowPaperNote,
+  .RewardsRowPazzle,
+  .RewardsRowPrize {
+    width: 100%;
+  }
+  .RewardsBookWrapper,
+  .RewardsHandsWrapper,
+  .RewardsPaperNoteWrapper,
+  .RewardsPazzleWrapper,
+  .RewardsPrizeWrapper {
+    flex-direction: column;
+  }
+  .RewardsBookWrapper,
+  .RewardsPaperNoteWrapper,
+  .RewardsPrizeWrapper {
+    align-items: flex-start;
+  }
+  .RewardsHandsWrapper,
+  .RewardsPazzleWrapper {
+    align-items: flex-end;
+  }
+  .RewardsBookSteps,
+  .RewardsHandsSteps,
+  .RewardsPaperNoteSteps,
+  .RewardsPazzleSteps,
+  .RewardsPrizeSteps {
+    min-width: auto;
+  }
+  .RewardsRowPaperNote,
+  .RewardsRowHands {
+    margin-top: 0 !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .RewardsBookWrapper,
+  .RewardsHandsWrapper,
+  .RewardsPaperNoteWrapper,
+  .RewardsPazzleWrapper,
+  .RewardsPrizeWrapper {
+    align-items: center;
+  }
+}

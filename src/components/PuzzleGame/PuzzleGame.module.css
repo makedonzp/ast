@@ -1,0 +1,30 @@
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100vh; */
+  padding: 0 !important;
+  padding-top: 50px !important;
+}
+.headerLink {
+  color: var(--black-color);
+  text-decoration: none;
+  font-family: "Montserrat-Regular", serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 850px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.headerBtn {
+  background-color: var(--header-bgr-color);
+  height: 56px;
+  width: 456px;
+  border-radius: 50px;
+}
+.gameContainerFluid {
+  position: relative;
+  height: 100vh;
+}

@@ -1,0 +1,77 @@
+.Header {
+  background-color: var(--header-bgr-color);
+  height: clamp(3.125rem, 2.946rem + 0.89vw, 3.75rem);
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+.HeaderLogoImage {
+  background-image: url("../../assets/logo.svg");
+  height: 43px;
+  width: 47px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.HeaderLogo_and_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.HeaderNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.HeaderLinksWrapper {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+}
+.HeaderLink {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  color: var(--black-color);
+}
+.HeaderLink:hover {
+  color: var(--white-color) !important;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
+}
+.HeaderSocialsImageVk {
+  background-image: url("../../assets/map__vk_icon.svg");
+}
+.HeaderSocialsImageWhatsapp {
+  background-image: url("../../assets/header__watsapp.svg");
+}
+.HeaderSocialsImageTelegram {
+  background-image: url("../../assets/header__tg.svg");
+}
+.HeaderSocialsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10.14px;
+}
+.HeaderSocialsLink {
+  transition: all 0.4s ease-in-out;
+}
+.HeaderSocialsLink:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+.HeaderSocialsImageWhatsapp,
+.HeaderSocialsImageTelegram,
+.HeaderSocialsImageVk {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 36px;
+  height: 36px;
+}
+@media (max-width: 1000px) {
+  .HeaderNav {
+    display: none;
+  }
+}

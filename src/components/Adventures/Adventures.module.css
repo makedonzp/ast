@@ -1,0 +1,334 @@
+/* Основной контейнер */
+.Adventures {
+  padding: 20px;
+}
+
+.AdventuresContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.AdventuresColPlayerWrapper {
+  padding-top: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
+}
+/* Контейнер для видеоплеера */
+.AdventuresColPlayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Для позиционирования кнопки плей */
+  z-index: 2000;
+}
+.AdventuresRowFilterWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.FilterButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Montserrat-Regular", serif;
+  color: #333;
+  padding: 10px 20px;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.FilterButton:hover {
+  color: #000;
+}
+
+.ActiveFilterButton::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.videoWrapper {
+  position: relative; /* Контейнер для видео и кнопки плей */
+
+  height: clamp(18.75rem, 15.161rem + 17.95vw, 31.313rem); /* Высота видео */
+  border-radius: clamp(
+    1.5rem,
+    1.036rem + 2.32vw,
+    3.125rem
+  ); /* Скругление углов */
+  overflow: hidden; /* Скрываем содержимое, выходящее за границы */
+  cursor: pointer; /* Делаем контейнер кликабельным */
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Масштабирование видео */
+  border-radius: clamp(
+    1.5rem,
+    1.036rem + 2.32vw,
+    3.125rem
+  ); /* Скругление углов */
+}
+
+/* Кнопка плей */
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрирование кнопки */
+  width: clamp(3.125rem, 2.589rem + 2.68vw, 5rem);
+  height: clamp(3.125rem, 2.589rem + 2.68vw, 5rem);
+  background: none; /* Убираем фон */
+  border: none;
+  cursor: pointer;
+  z-index: 10; /* Чтобы кнопка была поверх видео */
+  opacity: 0; /* Скрываем кнопку по умолчанию */
+  transition: opacity 0.3s ease-in-out; /* Анимация появления */
+  background-color: #ffffffa7;
+  border-radius: 50%;
+}
+
+.videoWrapper:hover .playButton {
+  opacity: 1; /* Показываем кнопку при наведении */
+}
+
+.playButton img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Подгонка иконки */
+  height: 45px;
+  width: 41px;
+  margin-left: 8px;
+}
+
+/* Скрытие элементов контроллера */
+.video::-webkit-media-controls {
+  display: none !important;
+}
+
+.video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+.video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+.video::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+.video::-webkit-media-controls-current-time-display {
+  display: none !important;
+}
+
+.video::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+/* Контейнер для текста */
+.AdventuresColTextWratter {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+}
+
+.AdventureText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.AdventureTitle {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
+}
+
+.AdventureSocialWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.938rem, 0.741rem + 0.98vw, 1.625rem);
+}
+
+.AdventureMarketPlaces {
+  display: flex;
+  gap: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
+  align-items: center;
+}
+
+.AdventureSocialWrapper {
+  display: flex;
+}
+
+/* Изображения маркетплейсов */
+.OzoneMarket {
+  background-image: url("../../assets/ozone.png");
+}
+
+.WBeMarket {
+  background-image: url("../../assets/wb.png");
+}
+
+.ReedCityMarket {
+  background-image: url("../../assets/reed_city.png");
+}
+
+.LetterEaterMarket {
+  background-image: url("../../assets/letter_eater.png");
+}
+
+.OzoneMarket,
+.WBeMarket,
+.ReedCityMarket,
+.LetterEaterMarket {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: clamp(1.938rem, 1.58rem + 1.79vw, 3.188rem);
+  min-width: clamp(1.875rem, 1.518rem + 1.79vw, 3.125rem);
+}
+
+/* Фильтр */
+.AdventuresRowFilter {
+  padding-top: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
+}
+
+/* Контейнер для карточек */
+.AdventuresRowCards {
+  padding-bottom: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+  flex-wrap: nowrap !important;
+  overflow: scroll;
+  padding-top: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+  gap: clamp(1.5rem, 2.5rem + 3.21vw, 3.75rem);
+}
+
+.AdventuresRowCards::-webkit-scrollbar {
+  display: none;
+}
+
+/* Карточка */
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: clamp(18.75rem, 15.125rem + 18.13vw, 31.438rem);
+  min-width: 307px;
+  gap: 15px;
+}
+
+/* Контейнер для картинок в карточке */
+.CardImageWrapper {
+  border: solid 1px var(--header-bgr-color);
+  background-color: #ffffff;
+  border-radius: 25px;
+  overflow: scroll;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.CardImageWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Изображение в карточке */
+.CardImage {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  min-height: 302px;
+  min-width: 266px;
+}
+
+/* Контейнер для картинок */
+.CardImagesContainer {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: auto;
+  scrollbar-width: none; /* Скрываем скроллбар для Firefox */
+  -ms-overflow-style: none; /* Скрываем скроллбар для IE и Edge */
+}
+
+.CardImagesContainer::-webkit-scrollbar {
+  display: none; /* Скрываем скроллбар для Chrome, Safari и Opera */
+}
+
+/* Активная точка */
+
+/* Контейнер для точек */
+.DotsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Расстояние между точками */
+  margin-top: 15px; /* Отступ сверху */
+  z-index: 10; /* Убедитесь, что точки находятся поверх других элементов */
+}
+
+/* Точка */
+.Dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* Делаем точки круглыми */
+  background-color: #ccc; /* Цвет неактивной точки */
+  cursor: pointer; /* Делаем точки кликабельными */
+  transition: background-color 0.3s ease; /* Анимация при наведении */
+}
+.ActiveDot {
+  background-color: #585555; /* Цвет активной точки */
+}
+.CardBottomSection {
+  text-align: center;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.CardTitle {
+  font-size: 16px;
+  font-family: "Montserrat-Semibold", serif;
+}
+.CardDesscription {
+  font-family: "Montserrat-Regular", serif;
+  font-size: 12px;
+}
+.CardButton {
+  background-color: var(--header-bgr-color);
+  min-height: 60px;
+  font-family: "Montserrat-Regular", serif;
+  border-radius: 30px;
+  font-size: 20px;
+}
+@media (max-width: 1200px) {
+  .AdventureText {
+    padding-top: 30px;
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .AdventuresColPlayerWrapper {
+    flex-direction: column;
+  }
+  .DotsContainerBottom {
+    display: none;
+  }
+}
+@media (max-width: 578px) {
+  .videoWrapper {
+    width: 300px;
+    height: 300px;
+  }
+}

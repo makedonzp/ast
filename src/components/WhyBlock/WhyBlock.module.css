@@ -1,0 +1,116 @@
+.WhyBlock {
+  padding: 0 !important;
+  padding-top: clamp(2.5rem, 1.071rem + 7.14vw, 7.5rem) !important;
+}
+.WhyBlockRowImages {
+  padding-top: clamp(1.25rem, 0.839rem + 2.05vw, 2.688rem);
+  gap: 20px;
+}
+.WhyBlockColBoyWrapper,
+.WhyBlockColGirlWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+.WhyBlockColBoy {
+  background-image: url("../../assets/boy_img.png");
+  min-height: clamp(18.75rem, 15.804rem + 14.73vw, 29.063rem);
+}
+.WhyBlockColGirl {
+  background-image: url("../../assets/girl_img.png");
+  min-height: clamp(18.75rem, 15.804rem + 14.73vw, 29.063rem);
+}
+.WhyBlockColBoy,
+.WhyBlockColGirl {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.WhyBlockTitle {
+  color: var(--title-text-color) !important;
+  font-family: "Adigiana-2", "serif";
+  font-size: clamp(3.25rem, 1.464rem + 3.93vw, 5rem);
+}
+.WhyBlockText {
+  font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
+  padding-top: clamp(1.563rem, 0.938rem + 3.13vw, 3.75rem);
+}
+.Advantages {
+  display: grid;
+  grid-template-areas: "BookItem StarsItem StrokeItem ThingsItem";
+  gap: 16px;
+  max-width: 994px;
+  margin: 0 auto;
+  padding-top: clamp(1.563rem, 0.938rem + 3.13vw, 3.75rem);
+}
+.BookItemImage {
+  background-image: url("../../assets/book__card-img.png");
+}
+.StarsItemImage {
+  background-image: url("../../assets/stars_card_img.png");
+}
+.StrokeItemImage {
+  background-image: url("../../assets/medal_card_img.png");
+}
+.ThingsItemImage {
+  background-image: url("../../assets/figures_card_img.png");
+}
+.BookItem {
+  grid-area: BookItem;
+}
+.StarsItem {
+  grid-area: StarsItem;
+}
+.StrokeItem {
+  grid-area: StrokeItem;
+}
+.ThingsItem {
+  grid-area: ThingsItem;
+}
+.BookItem,
+.StarsItem,
+.StrokeItem,
+.ThingsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.BookItemImage,
+.StarsItemImage,
+.StrokeItemImage,
+.ThingsItemImage {
+  min-height: 207px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-width: 220px;
+}
+.AdvantagesItemText {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: "Montserrat-Regular", serif;
+}
+@media screen and (max-width: 1000px) {
+  .Advantages {
+    grid-template-areas:
+      "BookItem StarsItem"
+      "StrokeItem ThingsItem";
+  }
+}
+@media screen and (max-width: 768px) {
+  .WhyBlockRowImages {
+    flex-direction: column !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Advantages {
+    grid-template-areas:
+      "BookItem" "StarsItem"
+      "StrokeItem" "ThingsItem";
+  }
+}
