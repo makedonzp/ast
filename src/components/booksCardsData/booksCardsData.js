@@ -1,12 +1,12 @@
-import aliceFirst from "../../assets/alice_book.png";
-import buratino from "../../assets/treeman.png";
-import catHouse from "../../assets/catHouse.png";
-import snowQueen from "../../assets/snowQueen.png";
-import wizard from "../../assets/wizardIzumrudCity.png";
-import saltanKing from "../../assets/SaltanKingStory.png";
-import twelwe from "../../assets/twelweMon.png";
-import aliceSecond from "../../assets/aliceBookSecond.png";
-import storyes from "../../assets/storyes.png";
+import aliceFirst from "../../assets/alice_book.webp";
+import buratino from "../../assets/treeman.webp";
+import catHouse from "../../assets/catHouse.webp";
+import snowQueen from "../../assets/snowQueen.webp";
+import wizard from "../../assets/wizardIzumrudCity.webp";
+import saltanKing from "../../assets/SaltanKingStory.webp";
+import twelwe from "../../assets/twelweMon.webp";
+import aliceSecond from "../../assets/aliceBookSecond.webp";
+import storyes from "../../assets/storyes.webp";
 export const booksCardsData = {
   books: [
     {

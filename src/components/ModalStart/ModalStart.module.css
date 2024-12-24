@@ -40,7 +40,7 @@
   justify-content: center;
 }
 .StarsLeft {
-  background-image: url("../../assets/modal_left_pressies.png");
+  background-image: url("../../assets/modal_left_pressies.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -51,7 +51,7 @@
   left: 0;
 }
 .StarsRight {
-  background-image: url("../../assets/modal__right_pressies.png");
+  background-image: url("../../assets/modal__right_pressies.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

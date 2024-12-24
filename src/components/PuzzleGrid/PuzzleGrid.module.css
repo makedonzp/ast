@@ -47,7 +47,7 @@
 .piece {
   width: 141.67px; /* Ширина пазла */
   height: 97px; /* Высота пазла */
-  background-image: url("../../assets/puzzle_complete.png"); /* Изображение пазла */
+  background-image: url("../../assets/puzzle_complete.webp"); /* Изображение пазла */
   background-size: 850px 485px; /* Размер изображения */
   cursor: grab;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./PuzzlePreviewModal.module.css";
-import puzzle from "../../assets/puzzle_complete.png";
+import puzzle from "../../assets/puzzle_complete.webp";
 
 const PuzzlePreviewModal = ({ onHide }) => {
   return (

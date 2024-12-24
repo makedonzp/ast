@@ -18,7 +18,7 @@
 .RewardsBookImage {
   min-height: 268px;
   min-width: 273px;
-  background-image: url("../../assets/book.png");
+  background-image: url("../../assets/book.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -33,7 +33,7 @@
   width: 100%;
 }
 .RewardsBookSteps {
-  background-image: url("../../assets/foots_1.png");
+  background-image: url("../../assets/foots_1.webp");
   min-width: 398px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -51,7 +51,7 @@
   gap: 24px;
 }
 .RewardsHandsSteps {
-  background-image: url("../../assets/foots_2.png");
+  background-image: url("../../assets/foots_2.webp");
   min-width: 410px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -60,7 +60,7 @@
 .RewardsHandsImage {
   min-height: 268px;
   min-width: 273px;
-  background-image: url("../../assets/hands.png");
+  background-image: url("../../assets/hands.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -89,7 +89,7 @@
 .RewardsPaperNoteImage {
   min-height: 268px;
   min-width: 273px;
-  background-image: url("../../assets/paper_note.png");
+  background-image: url("../../assets/paper_note.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -105,7 +105,7 @@
 }
 
 .RewardsPaperNoteSteps {
-  background-image: url("../../assets/foots_3.png");
+  background-image: url("../../assets/foots_3.webp");
   min-width: 398px;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -126,7 +126,7 @@
 .RewardsPazzleImage {
   min-height: 268px;
   min-width: 273px;
-  background-image: url("../../assets/pazzle.png");
+  background-image: url("../../assets/pazzle.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -155,7 +155,7 @@
 .RewardsPrizeImage {
   min-height: 268px;
   min-width: 273px;
-  background-image: url("../../assets/Reward_cup.png");
+  background-image: url("../../assets/Reward_cup.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -170,13 +170,13 @@
   margin-bottom: 0;
 }
 
-.RewardsPrizeSteps {
-  background-image: url("../../assets/foots_4.png");
+/* .RewardsPrizeSteps {
+  background-image: url("../../assets/foots_4.webp");
   min-width: 600px;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-}
+} */
 
 @media (max-width: 1000px) {
   .RewardsContainer {

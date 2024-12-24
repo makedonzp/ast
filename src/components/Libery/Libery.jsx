@@ -3,15 +3,15 @@ import styles from "./Libery.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import BookModal from "../BookModal/BookModal"; // Импортируем компонент модального окна
-import bookbgr from "../../assets/book_bgr.png";
-import secongbgr from "../../assets/secongBook.png";
-import thirdbgr from "../../assets/third_bgr.png";
-import firstModalBgr from "../../assets/modal_bgr.png";
-import secondModalBgr from "../../assets/secondModalBgr.png";
+import bookbgr from "../../assets/book_bgr.webp";
+import secongbgr from "../../assets/secongBook.webp";
+import thirdbgr from "../../assets/third_bgr.webp";
+import firstModalBgr from "../../assets/modal_bgr.webp";
+import secondModalBgr from "../../assets/secondModalBgr.webp";
 import alice from "../../assets/alice.gif";
 import queen from "../../assets/queen.gif";
-import aliceVideoAbout from "../../assets/player__place.png";
-import snowQueenAbout from "../../assets/snowQueen.mp4";
+// import aliceVideoAbout from "../../assets/player__place.webp";
+// import snowQueenAbout from "";
 
 export default function Libery() {
   const [modalIsOpen, setModalIsOpen] = useState(false); // Состояние для управления модальным окном
@@ -24,7 +24,8 @@ export default function Libery() {
       title: "«Алиса в Зазеркалье» ",
       description:
         "— продолжение знаменитой сказки «Алиса в Стране Чудес», в которой Льюис Кэрролл вновь ведёт и маленьких, и взрослых читателей в загадочный мир, полный сказки и волшебства. ",
-      videoUrl: aliceVideoAbout,
+      videoUrl:
+        "https://www.dropbox.com/scl/fi/6b8lkcrk2gtyqeclmihp7/aliceVideoUrl.mp4?rlkey=f1mha6zymn5h1j7kgnedjwbog&st=7fdxnwco&dl=1",
       modadlBgr: firstModalBgr,
       bookBgr: bookbgr,
       maxWidth: 130, // Максимальная ширина в пикселях
@@ -36,7 +37,8 @@ export default function Libery() {
       title: "«Снежная королева.",
       description:
         " Щелкунчик. Госпожа Метелица» — переверните страницу — и вот уже сражение с мышами вместе со Щелкунчиком, прогулка вместе с Гердой, а служанка госпожи Метелицы взбивает подушки.",
-      videoUrl: snowQueenAbout,
+      videoUrl:
+        "https://www.dropbox.com/scl/fi/ujnyr84b6ba0c4yqa34fb/snowQueen.mp4?rlkey=fbt895cquf7zcu5yycsr9f87g&st=63yn3bd0&dl=1",
       modadlBgr: secondModalBgr,
       bookBgr: secongbgr,
       maxWidth: 85, // Максимальная ширина в пикселях,
@@ -48,7 +50,7 @@ export default function Libery() {
       title: "Книга 3",
       description: "Описание книги",
       videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
-      bgrImg: "../../assets/boy_img.png",
+      bgrImg: "../../assets/boy_img.webp",
       bookBgr: thirdbgr,
       maxWidth: 85, // Максимальная ширина в пикселях
       animation: alice,
@@ -59,7 +61,8 @@ export default function Libery() {
       title: "«Алиса в Зазеркалье» ",
       description:
         "— продолжение знаменитой сказки «Алиса в Стране Чудес», в которой Льюис Кэрролл вновь ведёт и маленьких, и взрослых читателей в загадочный мир, полный сказки и волшебства. ",
-      videoUrl: aliceVideoAbout,
+      videoUrl:
+        "https://www.dropbox.com/scl/fi/6b8lkcrk2gtyqeclmihp7/aliceVideoUrl.mp4?rlkey=f1mha6zymn5h1j7kgnedjwbog&st=7fdxnwco&dl=1",
       modadlBgr: firstModalBgr,
       bookBgr: bookbgr,
       maxWidth: 130, // Максимальная ширина в пикселях
@@ -71,7 +74,8 @@ export default function Libery() {
       title: "«Снежная королева.",
       description:
         " Щелкунчик. Госпожа Метелица» — переверните страницу — и вот уже сражение с мышами вместе со Щелкунчиком, прогулка вместе с Гердой, а служанка госпожи Метелицы взбивает подушки.",
-      videoUrl: snowQueenAbout,
+      videoUrl:
+        "https://www.dropbox.com/scl/fi/ujnyr84b6ba0c4yqa34fb/snowQueen.mp4?rlkey=fbt895cquf7zcu5yycsr9f87g&st=63yn3bd0&dl=1",
       modadlBgr: secondModalBgr,
       bookBgr: secongbgr,
       maxWidth: 85, // Максимальная ширина в пикселях,
@@ -83,7 +87,7 @@ export default function Libery() {
       title: "Книга 3",
       description: "Описание книги",
       videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
-      bgrImg: "../../assets/boy_img.png",
+      bgrImg: "../../assets/boy_img.webp",
       bookBgr: thirdbgr,
       maxWidth: 85, // Максимальная ширина в пикселях
       animation: alice,

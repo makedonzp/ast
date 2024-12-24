@@ -14,11 +14,11 @@
   text-align: center;
 }
 .WhyBlockColBoy {
-  background-image: url("../../assets/boy_img.png");
+  background-image: url("../../assets/boy_img.webp");
   min-height: clamp(18.75rem, 15.804rem + 14.73vw, 29.063rem);
 }
 .WhyBlockColGirl {
-  background-image: url("../../assets/girl_img.png");
+  background-image: url("../../assets/girl_img.webp");
   min-height: clamp(18.75rem, 15.804rem + 14.73vw, 29.063rem);
 }
 .WhyBlockColBoy,
@@ -45,16 +45,16 @@
   padding-top: clamp(1.563rem, 0.938rem + 3.13vw, 3.75rem);
 }
 .BookItemImage {
-  background-image: url("../../assets/book__card-img.png");
+  background-image: url("../../assets/book__card-img.webp");
 }
 .StarsItemImage {
-  background-image: url("../../assets/stars_card_img.png");
+  background-image: url("../../assets/stars_card_img.webp");
 }
 .StrokeItemImage {
-  background-image: url("../../assets/medal_card_img.png");
+  background-image: url("../../assets/medal_card_img.webp");
 }
 .ThingsItemImage {
-  background-image: url("../../assets/figures_card_img.png");
+  background-image: url("../../assets/paper_note.webp");
 }
 .BookItem {
   grid-area: BookItem;

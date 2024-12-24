@@ -2,9 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./Adventures.module.css";
 import { booksCardsData } from "../../components/booksCardsData/booksCardsData";
-// import preview from "../../assets/preview.mp4";
-import playIcon from "../../assets/play-icon.png"; // Иконка плей
-import previewImg from "../../assets/player__place.png";
+import playIcon from "../../assets/play-icon.webp"; // Иконка плей
 
 export default function Adventures() {
   const [isPlaying, setIsPlaying] = useState(false); // Состояние для проигрывания видео
@@ -183,12 +181,15 @@ export default function Adventures() {
               className={styles.videoWrapper}
               onClick={handlePlayClick} // Добавляем обработчик клика на контейнер
             >
-              {/* <video id="myVideo" className={styles.video} loop controls>
-                <source src={preview} type="video/mp4" />
+              <video id="myVideo" className={styles.video} loop controls>
+                <source
+                  src="https://www.dropbox.com/scl/fi/1kirv7w9gk584405a9hjr/preview.mp4?rlkey=kr0gu877zdj4yer6tbz8d1iat&st=hvoqgoyn&dl=1"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
-              </video> */}
+              </video>
               {/* Кнопка плей */}
-              <img src={previewImg} alt="" />
+              {/* <img src={previewImg} alt="" /> */}
               <button
                 className={styles.playButton}
                 onClick={handlePlayClick}

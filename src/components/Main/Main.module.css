@@ -1,5 +1,5 @@
 .Main {
-  background-image: url("../../assets/main__bg_v2.png");
+  background-image: url("../../assets/main__bg_v2.webp");
   /* min-height: clamp(31.25rem, 27.5rem + 25.75vw, 55.775rem); */
   flex-grow: 1;
   display: flex;
@@ -138,7 +138,7 @@
 }
 @media (max-width: 568px) {
   .Main {
-    background-image: url("../../assets/main__bg_mobile.png");
+    background-image: url("../../assets/main__bg_mobile.webp");
     background-size: contain;
   }
 }

@@ -170,19 +170,19 @@
 
 /* Изображения маркетплейсов */
 .OzoneMarket {
-  background-image: url("../../assets/ozone.png");
+  background-image: url("../../assets/ozone.webp");
 }
 
 .WBeMarket {
-  background-image: url("../../assets/wb.png");
+  background-image: url("../../assets/wb.webp");
 }
 
 .ReedCityMarket {
-  background-image: url("../../assets/reed_city.png");
+  background-image: url("../../assets/reed_city.webp");
 }
 
 .LetterEaterMarket {
-  background-image: url("../../assets/letter_eater.png");
+  background-image: url("../../assets/letter_eater.webp");
 }
 
 .OzoneMarket,
